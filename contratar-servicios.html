@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MiClaro | SVPersonas</title>
+    <!-- Meta SEO -->
+    <meta name="Title" content="Sucursal Virtual">
+    <meta name="description" content="Sucursal Virtual">
+    <meta name="distribution" content="global">
+    <meta name="robot" content="all,index,follow">
+    <meta name="author" content="Claro Chile">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="sv2/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="sv2/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="sv2/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="sv2/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="sv2/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="sv2/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="sv2/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="sv2/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="sv2/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="sv2/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="sv2/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="sv2/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="sv2/favicon/favicon/favicon-16x16.png">
+    <link rel="manifest" href="sv2/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#e2231a">
+    <meta name="msapplication-TileImage" content="sv2/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#e2231a">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="sv2/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sv2/lib/css/slick.min.css"/>
+    <link rel="stylesheet" href="sv2/css/general.css">
+    <!-- Scripts -->
+    <script type="text/javascript" src="sv2/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/popper.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/slick.min.js"></script>
+
+    <script>
+        // ($(
+        //     var listaLineas = [${lista_lineas}]
+
+        // ))
+    </script>
+</head>
+<body>
+
+<!-- INICIO HEADER -->
+<div id="htmlHeader"></div>
+<!-- FIN HEADER -->
+
+<!-- INICIO CONTENEDOR PRINCIPAL -->
+<div class="contenedor-principal">
+    <div class="container index-contratar">
+        <div class="componente-selector row align-items-center mx-0">
+            <!-- INICIO CONSULTANDO -->
+            <div class="titulo-compuesto rojo-1">Est&aacute;s <span>consultando:</span></div>
+            <div class="col-12 col-lg-6">
+                <select id="select-producto" class="select-estandar">
+                    <option value="cuentaExacta" data-service="cuentaExacta" data-msisdn="numero tlf">Producto Cuenta Exacta</option>
+                    <option value="prepago" data-service="prepago" data-msisdn="numero tlf">Producto Prepago</option>
+                    <option value="postpago" data-service="postpago" data-msisdn="numero tlf" selected>Producto Postpago</option>
+                    <option value="hogarBafi" data-service="hogarBafi" data-msisdn="numero tlf">Hogar (DTH BAFI)</option>
+                    <option value="hogarHFC" data-service="hogarHFC" data-msisdn="numero tlf">Hogar (HFC)</option>
+                    <option value="hogarDTH" data-service="hogarDTH" data-msisdn="numero tlf">Hogar (DTH)</option>
+                </select>
+            <!-- FIN CONSULTANDO -->
+            </div>
+        </div>
+        <div id="body-producto">
+            <div id="productoPostpagoSubview">
+                <nav class="pestannas">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link" id="nav-contratar-tab" data-toggle="tab" href="#nav-contratar" role="tab" aria-controls="nav-contratar" aria-selected="false">Contratar</a>
+                        <a class="nav-item nav-link active" id="nav-historial-tab" data-toggle="tab" href="#nav-historial" role="tab" aria-controls="nav-historial" aria-selected="true">Historial</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane" id="nav-contratar" role="tabpanel" aria-labelledby="nav-contratar-tab">
+                        <img src="sv2/imgs/ej-diseno/ej-contratar.png" alt="Contratar">
+                    </div>
+                    <div class="tab-pane show active" id="nav-historial" role="tabpanel" aria-labelledby="nav-historial-tab">
+                        <div class="tabla-des-act">
+                            <div class="titulo-semibold gris-1 titulo">Activaci&oacute;n / Desactivaci&oacute;n de Servicios</div>
+                            <table class="table-responsive-md tabla-estandar">
+                                <thead>
+                                    <tr>
+                                        <th>Servicios</th>
+                                        <th>Acci&oacute;n</th>
+                                        <th>Fecha</th>
+                                        <th>Hora</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Roaming</td>
+                                        <td>Activado</td>
+                                        <td>22/01/2019</td>
+                                        <td>11:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roaming</td>
+                                        <td>Activado</td>
+                                        <td>22/01/2019</td>
+                                        <td>11:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roaming</td>
+                                        <td>Activado</td>
+                                        <td>22/01/2019</td>
+                                        <td>11:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roaming</td>
+                                        <td>Activado</td>
+                                        <td>22/01/2019</td>
+                                        <td>11:20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roaming</td>
+                                        <td>Activado</td>
+                                        <td>22/01/2019</td>
+                                        <td>11:20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="titulo-light rojo-1 info">* No se considerar&aacute; las activaciones/desactivaciones por Call Center</div>
+                            <ul class="tabla-paginacion">
+                                <li><a class="btn_prev desactivo" onclick="javascript:void(0);"
+                                        style="cursor:default;opacity:0.4;filter:alpha(opacity=40);"></a></li>
+                                <li><a class="num_pagina num1 paginate-pager1559830092099 activo"
+                                        id="pager1559830092099-pg-1"
+                                        onclick="pager1559830092099.showPage(1, 'pager1559830092099');" style="">1</a></li>
+                                <li><a class="num_pagina num1 paginate-pager1559830092099"
+                                            id="pager1559830092099-pg-1"
+                                            onclick="pager1559830092099.showPage(1, 'pager1559830092099');" style="">2</a></li>
+                                <li><a class="btn_next" onclick="javascript:void(0);"
+                                        style="cursor:default;opacity:0.4;filter:alpha(opacity=40);"></a></li>
+                            </ul>
+                        </div>
+                        <div class="tabla-historial">
+                            <div class="titulo-semibold gris-1 titulo">Historial de Compra de Bolsas</div>
+                            <table class="table-responsive-md tabla-estandar">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Descripci&oacute;n</th>
+                                        <th>Activaci&oacute;n</th>
+                                        <th>Vigencia</th>
+                                        <th>Canal de Compra</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bloque de Navegación 75MB</td>
+                                        <td>
+                                            <span class="desc">
+                                                75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                            </span>
+                                            <a class="link azul-1" href="javascript:void(0);" data-desc-modal="75 mb para navegar por internet de aaaaaaaaaaaaaaaaa">M&aacute;s detalles &gt;</a>
+                                        </td>
+                                        <td>22/01/2019</td>
+                                        <td>22/01/2019</td>
+                                        <td>Internet</td>
+                                        <td>$ 30.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bloque de Navegación 75MB</td>
+                                        <td>
+                                            <span class="desc">
+                                                75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                            </span>
+                                            <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                        </td>
+                                        <td>22/01/2019</td>
+                                        <td>22/01/2019</td>
+                                        <td>Internet</td>
+                                        <td>$ 250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bloque de Navegación 75MB</td>
+                                        <td>
+                                            <span class="desc">
+                                                75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                            </span>
+                                            <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                        </td>
+                                        <td>22/01/2019</td>
+                                        <td>22/01/2019</td>
+                                        <td>Internet</td>
+                                        <td>$ 250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bloque de Navegación 75MB</td>
+                                        <td>
+                                            <span class="desc">
+                                                75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                            </span>
+                                            <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                        </td>
+                                        <td>22/01/2019</td>
+                                        <td>22/01/2019</td>
+                                        <td>Internet</td>
+                                        <td>$ 250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bloque de Navegación 75MB</td>
+                                        <td>
+                                            <span class="desc">
+                                                75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                            </span>
+                                            <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                        </td>
+                                        <td>22/01/2019</td>
+                                        <td>22/01/2019</td>
+                                        <td>Internet</td>
+                                        <td>$ 25.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="tabla-paginacion">
+                                <li><a class="btn_prev desactivo" onclick="javascript:void(0);"
+                                        style="cursor:default;opacity:0.4;filter:alpha(opacity=40);"></a></li>
+                                <li><a class="num_pagina num1 paginate-pager1559830092099 activo"
+                                        id="pager1559830092099-pg-1"
+                                        onclick="pager1559830092099.showPage(1, 'pager1559830092099');" style="">1</a></li>
+                                <li><a class="num_pagina num1 paginate-pager1559830092099"
+                                            id="pager1559830092099-pg-1"
+                                            onclick="pager1559830092099.showPage(1, 'pager1559830092099');" style="">2</a></li>
+                                <li><a class="btn_next" onclick="javascript:void(0);"
+                                        style="cursor:default;opacity:0.4;filter:alpha(opacity=40);"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="productoCuentaExactaSubview">
+                    <nav class="pestannas">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link" id="nav-contratar-tab" data-toggle="tab" href="#nav-contratar" role="tab" aria-controls="nav-contratar" aria-selected="false">Contratar</a>
+                                <a class="nav-item nav-link active" id="nav-historial-tab" data-toggle="tab" href="#nav-historial" role="tab" aria-controls="nav-historial" aria-selected="true">Historial</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane" id="nav-contratar" role="tabpanel" aria-labelledby="nav-contratar-tab">
+                                <img src="sv2/imgs/ej-diseno/ej-contratar.png" alt="Contratar">
+                            </div>
+                            <div class="tab-pane show active" id="nav-historial" role="tabpanel" aria-labelledby="nav-historial-tab">
+                                <div class="tabla-historial">
+                                    <div class="titulo-semibold gris-1 titulo">Historial de Compra de Bolsas</div>
+                                    <table class="table-responsive-md tabla-estandar">
+                                        <thead>
+                                            <tr>
+                                                <th>Nombre</th>
+                                                <th>Descripci&oacute;n</th>
+                                                <th>Activaci&oacute;n</th>
+                                                <th>Vigencia</th>
+                                                <th>Canal de Compra</th>
+                                                <th>Valor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bloque de Navegación 75MB</td>
+                                                <td>
+                                                    <span class="desc">
+                                                        75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                                    </span>
+                                                    <a class="link azul-1" href="javascript:void(0);" data-desc-modal="75 mb para navegar por internet de aaaaaaaaaaaaaaaaa">M&aacute;s detalles &gt;</a>
+                                                </td>
+                                                <td>22/01/2019</td>
+                                                <td>22/01/2019</td>
+                                                <td>Internet</td>
+                                                <td>$ 30.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bloque de Navegación 75MB</td>
+                                                <td>
+                                                    <span class="desc">
+                                                        75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                                    </span>
+                                                    <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                                </td>
+                                                <td>22/01/2019</td>
+                                                <td>22/01/2019</td>
+                                                <td>Internet</td>
+                                                <td>$ 250</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bloque de Navegación 75MB</td>
+                                                <td>
+                                                    <span class="desc">
+                                                        75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                                    </span>
+                                                    <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                                </td>
+                                                <td>22/01/2019</td>
+                                                <td>22/01/2019</td>
+                                                <td>Internet</td>
+                                                <td>$ 250</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bloque de Navegación 75MB</td>
+                                                <td>
+                                                    <span class="desc">
+                                                        75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                                    </span>
+                                                    <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                                </td>
+                                                <td>22/01/2019</td>
+                                                <td>22/01/2019</td>
+                                                <td>Internet</td>
+                                                <td>$ 250</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bloque de Navegación 75MB</td>
+                                                <td>
+                                                    <span class="desc">
+                                                        75 mb para navegar por internet de aaaaaaaaaaaaaaaaa
+                                                    </span>
+                                                    <a class="link azul-1" href="http://">M&aacute;s detalles &gt;</a>
+                                                </td>
+                                                <td>22/01/2019</td>
+                                                <td>22/01/2019</td>
+                                                <td>Internet</td>
+                                                <td>$ 25.000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="tabla-paginacion">
+                                        <li><a class="btn_prev desactivo" onclick="javascript:void(0);"
+                                                style="cursor:default;opacity:0.4;filter:alpha(opacity=40);"></a></li>
+                                        <li><a class="num_pagina num1 paginate-pager1559830092099 activo"
+                                                id="pager1559830092099-pg-1"
+                                                onclick="pager1559830092099.showPage(1, 'pager1559830092099');" style="">1</a></li>
+                                        <li><a class="num_pagina num1 paginate-pager1559830092099"
+                                                    id="pager1559830092099-pg-1"
+                                                    onclick="pager1559830092099.showPage(1, 'pager1559830092099');" style="">2</a></li>
+                                        <li><a class="btn_next" onclick="javascript:void(0);"
+                                                style="cursor:default;opacity:0.4;filter:alpha(opacity=40);"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div id="productoPrepagoSubview">
+
+            </div>
+        </div>
+        <div class="modal detalles">
+            <div class="card">
+                <div class="card-header">
+                    <div class="titulo-semibold rojo-1 nombre">Paquete $ 3.000</div>
+                    <div class="titulo-regular gris-1 cargo">$ 3.000 Mensuales</div>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="cerrar cancelar"></a>
+                    <div class="titulo-regular gris-1 sub-titulo">La Bolsa incluye:</div>
+                    <div class="titulo-light gris-1 detalles">
+                        <ul>
+                            <li>250 minutos para llamadas todo destino.</li>
+                            <li>3 GB para navgera por internet desde tu Móvil.</li>
+                            <li>Redes sociales libres.</li>
+                            <li>El paquete tiene una vigencia de 10dias, tras esto, el producto queda desactivado.</li>
+                            <li>Los servicios de la bolsa, podrás usarlos en los siguientes 77  países: Antigua y Barbuda, Argentina, Australia, Austria, Bahamas, Belarús, Bélgica, Belize, Bolivia, Bosnia y Herzegovina, Brasil, Bulgaria, Canadá, China, Colombia, Costa Rica, Croacia, República Checa, Dinamarca, Republica Dominicana, Ecuador, El Salvador, Estonia, Finlandia, Francia, Alemania, Grecia, Guatemala, Haiti, Honduras, Hong Kong, Hungría, Islandia, Irlanda, Israel, Italia, Jamaica, Japón, República de Corea, Letonia, Líbano, Liechtenstein Macao, Malaysia, México, Holanda, Nueva Zelanda, Nicaragua, Noruegua, Panamá, Paraguay, Perú, Philippinas, Polonia Portugal, Puerto Rico, Qatar, Romania, Rusia, Serbia, Singapur, Eslovenia, South África, España, Suecia, Suiza, Taiwan, Thailandia, Trinidad y Tobago, Túnez, Turquía, Ucrania, Emiratos Árabes Unidos, Reino Unido, Estados Unidos, Uruguay y Venezuela.</li>
+                            <li>La bolsa tiene una vigencia de 30 días.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- INICIO AYUDA -->
+        <div id="htmlAyuda" class="componente-ayuda row mt-5"></div>
+        <!-- FIN AYUDA -->
+    </div>
+</div>
+<!-- FIN CONTENEDOR PRINCIPAL -->
+
+<!-- INICIO FOOTER -->
+<div id="htmlFooter"></div>
+<!-- FIN FOOTER -->
+
+</body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#htmlHeader').load('header.html');
+            $('#htmlAyuda').load('centroAyuda.html');
+            $('#htmlFooter').load('footer.html');
+        });
+    </script>
+    <script src="sv2/js/general.js"></script>
+</html>

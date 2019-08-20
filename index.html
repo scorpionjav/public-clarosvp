@@ -1,0 +1,2116 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MiClaro | SVPersonas</title>
+    <!-- Meta SEO -->
+    <meta name="Title" content="Sucursal Virtual">
+    <meta name="description" content="Sucursal Virtual">
+    <meta name="distribution" content="global">
+    <meta name="robot" content="all,index,follow">
+    <meta name="author" content="Claro Chile">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="sv2/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="sv2/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="sv2/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="sv2/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="sv2/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="sv2/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="sv2/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="sv2/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="sv2/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="sv2/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="sv2/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="sv2/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="sv2/favicon/favicon/favicon-16x16.png">
+    <link rel="manifest" href="sv2/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#e2231a">
+    <meta name="msapplication-TileImage" content="sv2/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#e2231a">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="sv2/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sv2/lib/css/slick.min.css"/>
+    <link rel="stylesheet" href="sv2/css/general.css">
+    <!-- Scripts -->
+    <script type="text/javascript" src="sv2/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/popper.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="sv2/lib/js/slick.min.js"></script>
+
+    <script>
+        // ($(
+        //     var listaLineas = [${lista_lineas}]
+
+        // ))
+    </script>
+</head>
+<body>
+
+<!-- INICIO HEADER -->
+    <div id="htmlHeader"></div>
+<!-- FIN HEADER -->
+
+<!-- INICIO CONTENEDOR PRINCIPAL -->
+<div class="contenedor-principal">
+    <div class="container">
+        <div class="home-banner row mx-0">
+            <div class="col-12 px-0">
+                <a href="https://clarochile.helpsite.cloud/soporte/contenido/descargue-aqui-app-mi-claro" target="_blank">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="titulo-compuesto rojo-1 titulo">Descarga la <span>APP Mi Claro</span></div>
+                            <div class="titulo-light gris-1 subtitulo">Descarga la aplicaci&oacute;n m&oacute;vil Mi Claro y disfruta de los beneficios que Claro te ofrece</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- INICIO BANNER -->
+            <div class="banner d-none">
+                <img src="sv2/imgs/ej-diseno/banner.png" alt="Banner">
+            </div>
+            <div class="banner d-none">
+                <img src="sv2/imgs/ej-diseno/banner-2.png" alt="Banner">
+            </div>
+            <div class="banner d-none">
+                <img src="sv2/imgs/ej-diseno/banner-3.png" alt="Banner">
+            </div>
+            <!-- FIN BANNER -->
+        </div>
+        <div class="row align-items-end align-items-lg-center">
+            <div class="componente-selector col-12 col-md-6 col-lg-7 order-2 order-md-1">
+                <div class="row flex-column flex-lg-row mx-0 py-0">
+                    <!-- INICIO CONSULTANDO -->
+                    <div class="titulo-compuesto rojo-1">Est&aacute;s <span>consultando:</span></div>
+                    <div class="col p-0 pl-lg-2">
+                        <select id="select-producto" class="select-estandar">
+                            <option value="cuentaExacta" data-service="cuentaExacta" data-msisdn="numero tlf">Producto Cuenta Exacta</option>
+                            <option value="prepago" data-service="prepago" data-msisdn="numero tlf">Producto Prepago</option>
+                            <option value="postpago" data-service="postpago" data-msisdn="numero tlf" selected>Producto Postpago</option>
+                            <option value="hogarBafi" data-service="hogarBafi" data-msisdn="numero tlf">Hogar (DTH BAFI)</option>
+                            <option value="hogarHFC" data-service="hogarHFC" data-msisdn="numero tlf">Hogar (HFC)</option>
+                            <option value="hogarDTH" data-service="hogarDTH" data-msisdn="numero tlf">Hogar (DTH)</option>
+                        </select>
+                    </div>
+                    <!-- FIN CONSULTANDO -->
+                </div>
+            </div>
+            <div class="home-notificacion col-12 col-md-6 col-lg-5 order-1 order-md-2">
+                <!-- INICIO NOTIFICACION -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="titulo-light rojo-1 titulo-1">revisa tus</div>
+                        <div class="titulo-semibold rojo-1 titulo-2">notificaciones</div>
+                        <a class="boton-redondeado hover-circular bg-rojo-1" href="javascript:void(0);">aqu&iacute;</a>
+                    </div>
+                </div>
+                <!--
+                <div class="card">
+                    <div class="card-body">
+                        <div class="titulo-semibold rojo-1 d-flex align-items-start">
+                            Notificaciones<span class="cantidad">10</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="contenedor">
+                                <div class="notiticacion titulo-semibold rojo-1">
+                                    <img src="sv2/imgs/home/icono-alerta.png" alt="alerta">
+                                    Tu boleta est&aacute; vencida
+                                </div>
+                                <a class="mas-detalles link azul-1" href="javascript:void(0);">M&aacute;s detalles &gt;</a>
+                            </div>
+                            <a class="ver-todo boton-redondeado hover-circular bg-rojo-1" href="#!">ver todo</a>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- FIN NOTIFICACION -->
+            </div>
+        </div>
+        <!-- INICIO: POSTPAGO - MODALES -->
+        <div>
+            <div class="roaming-ldi modal pregunta">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#" class="cerrar cancelar"></a>
+                        <div class="titulo-semibold rojo-1">Confirmaci&oacute;n</div>
+                        <div class="titulo-light gris-1 m-subtitulo">&iquest;Est&aacute;s seguro de <span
+                                class="m-accion">ACCION</span> tu servicio de <span
+                                class="titulo-semibold m-servicio">SERVICIO</span>&#63;</div>
+                        <div class="d-flex justify-content-center my-4">
+                            <a class="boton-redondeado hover-circular borde-rojo mr-2 cancelar" href="#!">NO</a>
+                            <a class="boton-redondeado hover-circular bg-rojo-1 ml-2 confirmar" href="#!">SI</a>
+                        </div>
+                        <div class="titulo-light gris-1 m-info">INFO</div>
+                    </div>
+                </div>
+            </div>
+            <div class="roaming-ldi modal exito">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#" class="cerrar cancelar"></a>
+                        <span id="m-icono-exito"></span>
+                        <div class="titulo-light rojo-1 m-titulo2">Tu solicitud de <span class="m-accion">ACCION</span> del
+                            servicio de <span class="titulo-semibold m-servicio">SERVICIO</span> est&aacute; siendo procesada
+                        </div>
+                        <div class="titulo-light gris-1 m-subtitulo mb-3">MENSAJE</div>
+                        <div class="titulo-light gris-1 m-info">INFO</div>
+                    </div>
+                </div>
+            </div>
+            <div class="roaming-ldi modal error">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#" class="cerrar cancelar"></a>
+                        <div class="titulo-semibold rojo-1">Error</div>
+                        <div class="titulo-semibold gris-1 m-subtitulo mb-3">Por el momento no podemos realizar tu solicitud.
+                            Por favor int&eacute;ntalo m&aacute;s tarde.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal detalles">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="titulo-semibold rojo-1 nombre">Max Premium Black Libre</div>
+                        <div class="titulo-regular gris-1 cargo">$ 37.990 Mensuales</div>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="cerrar cancelar"></a>
+                        <div class="titulo-light gris-1 detalles">
+                            <ul class="planDetails">
+                                <li>Plan Postpago con cargo fijo de $24.990.</li>
+                                <li>Incluye para usar en Chile: minutos libres para llamadas nacionales todo destino a un mÃ¡ximo de
+                                    300 nÃºmeros de destino distintos (valor minuto adicional:$60); 500 SMS todo destino (valor SMS
+                                    adicional:$50), 60GB (al alcanzar la cuota deberÃ¡ comprar bolsas para seguir navegando) y
+                                    navegaciÃ³n libre en RRSS (Whatsapp con llamadas de voz, Facebook, Facebook Messenger,
+                                    Instagram, Claro MÃºsica y Twitter).</li>
+                                <li>Incluye Bolsa de Roaming con 60 minutos, 60 SMS y 3GB, para disfrutar en 16 paÃ­ses de AmÃ©rica,
+                                    USA, Alemania, EspaÃ±a, Francia, Italia y Reino Unido (valor minuto adicional $60, SMS adicional
+                                    $60, MB adicional $20)Roaming no aplica para territorio satelital ni marÃ­timo.</li>
+                                <li>Incluye 60 minutos Larga Distancia Internacional para llamar a 16 paÃ­ses de AmÃ©rica y USA.
+                                </li>
+                                <li>Incluye suscripciÃ³n mensual a Claro Video por 12 meses.</li>
+                                <li>MÃ¡s informaciÃ³n en www.clarochile.cl.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN: POSTPAGO - MODALES -->
+        <div id="body-producto">
+            <div id="productoPostpagoSubview">
+                <div class="row">
+                    <div class="home-equipo postpago col-12 col-md-5 col-lg-3">
+                        <!-- INICIO EQUIPO -->
+                        <div class="titulo-semibold rojo-1 t-equipo">Equipo</div>
+                        <div id="nombre-equipo" class="titulo-semibold azul-1 n-equipo">Propio</div>
+                        <img id="foto-equipo" class="imagen-equipo" src="sv2/imgs/home/telefono.png" alt="equipo">
+                        <a class="boton-redondeado hover-circular bg-azul-1" href="#!">bloquear equipo</a>
+                        <div class="titulo-semibold rojo-1 t-plan">Plan</div>
+                        <div class="titulo-regular gris-1 n-plan">Max Premium Black Libre</div>
+                        <a id="linkDetallePlan" href="#!" class="link azul-1">M&aacute;s detalles del plan &gt;</a>
+                        <br>
+                        <a href="javascript:void(0);" class="link azul-1 mb-2">SMS Premium &gt;</a>
+                        <table class="tabla-detalles">
+                            <tbody>
+                                <tr class="encabezado">
+                                    <td colspan="3">detalles plan</td>
+                                </tr>
+                                <tr>
+                                    <td>Minutos</td>
+                                    <td>: </td>
+                                    <td>Libres</td>
+                                </tr>
+                                <tr>
+                                    <td>Navegaci&oacute;n</td>
+                                    <td>:</td>
+                                    <td class="du">75161927680</td>
+                                </tr>
+                                <tr>
+                                    <td>SMS</td>
+                                    <td>:</td>
+                                    <td>500 sms</td>
+                                </tr>
+                                <tr>
+                                    <td>Redes Sociales</td>
+                                    <td>:</td>
+                                    <td>Libres</td>
+                                </tr>
+                                <tr class="encabezado">
+                                    <td colspan="3">roaming</td>
+                                </tr>
+                                <tr>
+                                    <td>Minutos</td>
+                                    <td>:</td>
+                                    <td>100 min</td>
+                                </tr>
+                                <tr>
+                                    <td>Navegaci&oacute;n</td>
+                                    <td>:</td>
+                                    <td class="du">5368709120</td>
+                                </tr>
+                                <tr>
+                                    <td>SMS</td>
+                                    <td>:</td>
+                                    <td>100 sms</td>
+                                </tr>
+                                <tr class="encabezado">
+                                    <td colspan="3">LARGA DISTANCIA INTERNACIONAL</td>
+                                </tr>
+                                <tr>
+                                    <td>Minutos</td>
+                                    <td>:</td>
+                                    <td>100 min</td>
+                                </tr>
+                                <tr class="encabezado">
+                                    <td>cargo fijo</td>
+                                    <td>:</td>
+                                    <td id="cargo-fijo" class="monto">$ 37.990</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">CAMBIAR PLAN</a>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">CAMBIAR EQUIPO</a>
+                        <!-- FIN EQUIPO -->
+                    </div>
+                    <div class="home-consumo postpago col-12 col-md-7 col-lg-9">
+                        <!-- INICIO CONSUMO -->
+                        <div class="titulo-semibold rojo-1">Servicios</div>
+                        <div class="s-contenedor">
+                            <nav class="pestannas">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-pp-plan-tab" data-toggle="tab" href="#nav-pp-plan" role="tab"
+                                        aria-controls="nav-pp-plan" aria-selected="true">Plan</a>
+                                    <a class="nav-item nav-link" id="nav-roaming-tab" data-toggle="tab" href="#nav-roaming"
+                                        role="tab" aria-controls="nav-roaming" aria-selected="false">roaming</a>
+                                    <a class="nav-item nav-link" id="nav-ldi-tab" data-toggle="tab" href="#nav-ldi" role="tab"
+                                        aria-controls="nav-ldi" aria-selected="false">
+                                        <div class="d-none d-xl-block">Larga distancia internacional</div>
+                                        <div class="d-xl-none" data-toggle="tooltip" title="Larga Distancia Internacional">LDI
+                                        </div>
+                                    </a>
+                                    <a class="nav-item nav-link" id="nav-act-tab" data-toggle="tab" href="#nav-act"
+                                        role="tab" aria-controls="nav-act" aria-selected="false">
+                                        <div class="d-none d-lg-block">Activaci&oacute;n de Servicios</div>
+                                        <div class="d-lg-none" data-toggle="tooltip" title="Activaci&oacute;n de servicios">Activaci&oacute;n</div>
+                                    </a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabServicios">
+                                <div class="tab-pane show active" id="nav-pp-plan" role="tabpanel" aria-labelledby="nav-pp-plan-tab">
+                                    <div class="card-deck">
+                                        <div id="pp-sc-min" class="card libres">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Minutos</div>
+                                                <div class="grafico-consumo">
+                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                        title="">
+                                                        <path class="circulo-fondo"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <linearGradient id="pp-min-gradiente" x1="0" y1="1" x2="1" y2="0">
+                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                        </linearGradient>
+                                                        <path class="circulo-color" stroke="url(#pp-min-gradiente)"
+                                                            stroke-dasharray="0,100"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <text class="svgtexto-1">100</text>
+                                                        <text class="svgtexto-2">mIN</text>
+                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                        <text class="svgtexto-4">2</text>
+                                                    </svg>
+                                                    <div class="libres-min">
+                                                        <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicio
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="pp-sc-nav" class="card calcular-bytes">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Datos de Navegaci&oacute;n</div>
+                                                <div class="grafico-consumo">
+                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                        title="">
+                                                        <path class="circulo-fondo"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <linearGradient id="pp-nav-gradiente" x1="0" y1="1" x2="1" y2="0">
+                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                        </linearGradient>
+                                                        <path class="circulo-color" stroke="url(#pp-nav-gradiente)"
+                                                            stroke-dasharray="0,100"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <text class="svgtexto-1">75161927680</text>
+                                                        <text class="svgtexto-2">Unidad</text>
+                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                        <text class="svgtexto-4">7516192768</text>
+                                                    </svg>
+                                                    <div class="libres-nav">
+                                                        <img src="sv2/imgs/home/is-gb.png" alt="GB">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicios
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="pp-sc-sms" class="card">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">SMS</div>
+                                                <div class="grafico-consumo">
+                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip" title="">
+                                                        <path class="circulo-fondo"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <linearGradient id="pp-gradiente" x1="0" y1="1" x2="1" y2="0">
+                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                        </linearGradient>
+                                                        <path class="circulo-color" stroke="url(#pp-gradiente)"
+                                                            stroke-dasharray="0,100"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <text class="svgtexto-1">500</text>
+                                                        <text class="svgtexto-2">SMS</text>
+                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                        <text class="svgtexto-4">2</text>
+                                                    </svg>
+                                                    <div class="libres-sms">
+                                                        <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicios
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="pp-sc-rs" class="card libres">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">redes sociales</div>
+                                                <div class="grafico-consumo">
+                                                    <div class="libres-rs">
+                                                        <img src="sv2/imgs/home/is-rs.png" alt="RS">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicios
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card roaming-ldi paises">
+                                            <div class="card-body text-left">
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-logo-roaming.png" alt="Roamming">
+                                                    <div>
+                                                        <div class="titulo-light azul-1 titulo">Servicios Roaming incluidos en
+                                                            tu plan</div>
+                                                        <div class="titulo-light gris-7 subtitulo">aplica para los siguientes
+                                                            pa&iacute;ses:</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text text-left">
+                                                    Argentina, Brasil, Colombia, Ecuador, Rep. Dominicana, Honduras, Puerto
+                                                    Rico, Costa Rica, Guatemala, Panamá, Paraguay, Uruguay, El Salvador,
+                                                    Nicaragua, Perú, México, Estados Unidos, Alemania, España, Francia, Italia y
+                                                    Reino Unido.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                </div>
+                                <div class="tab-pane" id="nav-roaming" role="tabpanel" aria-labelledby="nav-roaming-tab">
+                                    <div class="s-sub-contenedor">
+                                        <nav class="sub-pestannas">
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="subtab-roa-plan-tab" data-toggle="tab"
+                                                    href="#subtab-roa-plan" role="tab" aria-controls="subtab-roa-plan"
+                                                    aria-selected="true">Plan</a>
+                                                <a class="nav-item nav-link" id="subtab-roa-bolsas-tab" data-toggle="tab"
+                                                    href="#subtab-roa-bolsas" role="tab" aria-controls="subtab-roa-bolsas"
+                                                    aria-selected="false">Bolsas</a>
+                                                <a class="nav-item nav-link" id="subtab-roa-granel-tab" data-toggle="tab"
+                                                    href="#subtab-roa-granel" role="tab" aria-controls="subtab-roa-granel"
+                                                    aria-selected="false">Servicios Adicionales</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane show active" id="subtab-roa-plan" role="tabpanel" aria-labelledby="subtab-roa-plan-tab">
+                                                <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                                    <div class="titulo-compuesto rojo-1 s-titulo titulo-plan">
+                                                        <span>servicios de roaming</span> incluidos en el plan
+                                                    </div>
+                                                    <div class="titulo-bold rojo-1 vigencia">Vigencia de 24 d&iacute;as</div>
+                                                </div>
+                                                <div class="card-deck">
+                                                    <div class="card incluye">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">Minutos</div>
+                                                            <div class="grafico-consumo">
+                                                                <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                                <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="titulo-light gris-1 ig-cantidad">100</div>
+                                                                    <div class="titulo-light gris-1 ig-unidad">min</div>
+                                                                </div>
+                                                            </div>
+                                                            <p class="card-text">
+                                                                Recuerda llevar el registro de tu consumo de minutos (entrantes y salientes)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card calcular-bytes">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">Datos de
+                                                                Navegaci&oacute;n</div>
+                                                            <div class="grafico-consumo">
+                                                                <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                                title="">
+                                                                    <path class="circulo-fondo"
+                                                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                    <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                        x2="1" y2="0">
+                                                                        <stop offset="0%" class="stop-color-1"></stop>
+                                                                        <stop offset="100%" class="stop-color-2"></stop>
+                                                                    </linearGradient>
+                                                                    <path class="circulo-color"
+                                                                        stroke="url(#pp-gradiente)"
+                                                                        stroke-dasharray="0,100"
+                                                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                    <text class="svgtexto-1">5368709120</text>
+                                                                    <text class="svgtexto-2">Bytes</text>
+                                                                    <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                    <text class="svgtexto-4">524288000</text>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-text"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card incluye">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">SMS</div>
+                                                            <div class="grafico-consumo">
+                                                                <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                                <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                <div class="d-inline-flex align-items-center">
+                                                                    <div class="titulo-light gris-1 ig-cantidad">100</div>
+                                                                    <div class="titulo-light gris-1 ig-unidad">sms todo <br>destino</div>
+                                                                </div>
+                                                            </div>
+                                                            <p class="card-text">
+                                                                Recuerda llevar el registro de tu consumo de sms (salientes)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                            <div class="tab-pane bolsas" id="subtab-roa-bolsas" role="tabpanel" aria-labelledby="subtab-roa-bolsas-tab">
+                                                <div class="bolsas-contenedor">
+                                                    <div class="titulo-compuesto rojo-1 s-titulo">bolsas <span>adicionales</span></div>
+                                                    <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                                        <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                            Bolsa Adicional Roaming 2 GB: <span>$ 29.990</span>
+                                                        </div>
+                                                        <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                                    </div>
+                                                    <div class="card-deck">
+                                                        <div class="card incluye">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">Minutos</div>
+                                                                <div class="grafico-consumo">
+                                                                    <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                                    <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="titulo-light gris-1 ig-cantidad">40</div>
+                                                                        <div class="titulo-light gris-1 ig-unidad">min</div>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="card-text">
+                                                                    Recuerda llevar el registro de tu consumo de minutos (entrantes y salientes)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card calcular-bytes">
+                                                                <div class="card-body">
+                                                                    <div class="card-title titulo-light azul-1">Datos de
+                                                                        Navegaci&oacute;n</div>
+                                                                    <div class="grafico-consumo">
+                                                                        <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                                        title="">
+                                                                            <path class="circulo-fondo"
+                                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                            <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                                x2="1" y2="0">
+                                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                                            </linearGradient>
+                                                                            <path class="circulo-color"
+                                                                                stroke="url(#pp-gradiente)"
+                                                                                stroke-dasharray="0,100"
+                                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                            <text class="svgtexto-1">2147483648</text>
+                                                                            <text class="svgtexto-2">GB</text>
+                                                                            <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                            <text class="svgtexto-4">2147483648</text>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <p class="card-text"></p>
+                                                                </div>
+                                                            </div>
+                                                        <div class="card incluye">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">SMS</div>
+                                                                <div class="grafico-consumo">
+                                                                    <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                                    <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <div class="titulo-light gris-1 ig-cantidad">40</div>
+                                                                        <div class="titulo-light gris-1 ig-unidad">sms todo <br>destino</div>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="card-text">
+                                                                    Recuerda llevar el registro de tu consumo de sms (salientes)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                                </div>
+                                                <div class="bolsas-contenedor">
+                                                    <div class="titulo-compuesto rojo-1 s-titulo">bolsas <span>adicionales</span></div>
+                                                    <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                                        <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                            Bolsa Adicional Roaming 4 GB: <span>$ 59.990</span>
+                                                        </div>
+                                                        <div class="titulo-bold rojo-1 vigencia">Vigencia de 20
+                                                            d&iacute;as</div>
+                                                    </div>
+                                                    <div class="card-deck">
+                                                        <div class="card incluye">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">Minutos</div>
+                                                                <div class="grafico-consumo">
+                                                                    <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                                    <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="titulo-light gris-1 ig-cantidad">100</div>
+                                                                        <div class="titulo-light gris-1 ig-unidad">min</div>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="card-text">
+                                                                    Recuerda llevar el registro de tu consumo de minutos (entrantes y salientes)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card calcular-bytes">
+                                                                <div class="card-body">
+                                                                    <div class="card-title titulo-light azul-1">Datos de
+                                                                        Navegaci&oacute;n</div>
+                                                                    <div class="grafico-consumo">
+                                                                        <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                                        title="">
+                                                                            <path class="circulo-fondo"
+                                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                            <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                                x2="1" y2="0">
+                                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                                            </linearGradient>
+                                                                            <path class="circulo-color"
+                                                                                stroke="url(#pp-gradiente)"
+                                                                                stroke-dasharray="0,100"
+                                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                            <text class="svgtexto-1">4294967296</text>
+                                                                            <text class="svgtexto-2">GB</text>
+                                                                            <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                            <text class="svgtexto-4">4294967296</text>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <p class="card-text"></p>
+                                                                </div>
+                                                            </div>
+                                                        <div class="card incluye">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">SMS</div>
+                                                                <div class="grafico-consumo">
+                                                                    <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                                    <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <div class="titulo-light gris-1 ig-cantidad">100</div>
+                                                                        <div class="titulo-light gris-1 ig-unidad">sms todo <br>destino</div>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="card-text">
+                                                                    Recuerda llevar el registro de tu consumo de sms (salientes)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                                </div>
+                                                <div class="bolsas-contenedor">
+                                                    <div class="titulo-compuesto rojo-1 s-titulo">bolsas <span>adicionales</span></div>
+                                                    <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                                        <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                            Bolsa Adicional Roaming 6 GB: <span>$ 79.990</span>
+                                                        </div>
+                                                        <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                                    </div>
+                                                    <div class="card-deck">
+                                                        <div class="card incluye">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">Minutos</div>
+                                                                <div class="grafico-consumo">
+                                                                    <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                                    <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="titulo-light gris-1 ig-cantidad">40</div>
+                                                                        <div class="titulo-light gris-1 ig-unidad">min</div>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="card-text">
+                                                                    Recuerda llevar el registro de tu consumo de minutos (entrantes y salientes)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card calcular-bytes">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">Datos de
+                                                                    Navegaci&oacute;n</div>
+                                                                <div class="grafico-consumo">
+                                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                                    title="">
+                                                                        <path class="circulo-fondo"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                            x2="1" y2="0">
+                                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                                        </linearGradient>
+                                                                        <path class="circulo-color"
+                                                                            stroke="url(#pp-gradiente)"
+                                                                            stroke-dasharray="0,100"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <text class="svgtexto-1">6442450944</text>
+                                                                        <text class="svgtexto-2">GB</text>
+                                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                        <text class="svgtexto-4">786432000</text>
+                                                                    </svg>
+                                                                </div>
+                                                                <p class="card-text"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card incluye">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">SMS</div>
+                                                                <div class="grafico-consumo">
+                                                                    <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                                    <div class="titulo-light gris-1 ig-titulo">Incluye</div>
+                                                                    <div class="d-inline-flex align-items-center">
+                                                                        <div class="titulo-light gris-1 ig-cantidad">40</div>
+                                                                        <div class="titulo-light gris-1 ig-unidad">sms todo <br>destino</div>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="card-text">
+                                                                    Recuerda llevar el registro de tu consumo de sms (salientes)
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="subtab-roa-granel" role="tabpanel" aria-labelledby="subtab-roa-granel-tab">
+                                                <div class="titulo-semibold rojo-1 s-titulo">consumo y/o servicios adicionales de telefon&iacute;a</div>
+                                                <div class="card-deck">
+                                                    <div class="card granel">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">Minutos</div>
+                                                            <div class="grafico-consumo">
+                                                                <img src="sv2/imgs/home/is-voz.png" alt="Voz">
+                                                                <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                                    <div class="titulo-light gris-1 ig-unidad">MIN</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card granel">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">Datos de Navegaci&oacute;n</div>
+                                                            <div class="grafico-consumo">
+                                                                <img src="sv2/imgs/home/is-datos.png" alt="Navegacion">
+                                                                <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                                    <div class="titulo-light gris-1 ig-unidad">GB</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card granel">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">SMS</div>
+                                                            <div class="grafico-consumo">
+                                                                <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                                <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                                    <div class="titulo-light gris-1 ig-unidad">sms todo <br>destino</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="nav-ldi" role="tabpanel" aria-labelledby="nav-ldi-tab">
+                                    <div class="s-sub-contenedor">
+                                        <nav class="sub-pestannas">
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="subtab-ldi-plan-tab" data-toggle="tab"
+                                                    href="#subtab-ldi-plan" role="tab" aria-controls="subtab-ldi-plan"
+                                                    aria-selected="true">Plan</a>
+                                                <a class="nav-item nav-link" id="subtab-ldi-bolsas-tab" data-toggle="tab"
+                                                    href="#subtab-ldi-bolsas" role="tab" aria-controls="subtab-ldi-bolsas"
+                                                    aria-selected="false">Bolsas</a>
+                                                <a class="nav-item nav-link" id="subtab-ldi-granel-tab" data-toggle="tab"
+                                                    href="#subtab-ldi-granel" role="tab" aria-controls="subtab-ldi-granel"
+                                                    aria-selected="false">Servicios Adicionales</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane show active" id="subtab-ldi-plan" role="tabpanel" aria-labelledby="subtab-ldi-plan-tab">
+                                                <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                                    <div class="titulo-compuesto rojo-1 s-titulo titulo-plan">
+                                                        <span>servicios de LDI</span> incluidos en el plan
+                                                    </div>
+                                                    <div class="titulo-bold rojo-1 vigencia">Vigencia de 24 d&iacute;as</div>
+                                                </div>
+                                                <div class="card-deck">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">Minutos</div>
+                                                            <div class="grafico-consumo">
+                                                                <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                                title="">
+                                                                    <path class="circulo-fondo"
+                                                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                    <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                        x2="1" y2="0">
+                                                                        <stop offset="0%" class="stop-color-1"></stop>
+                                                                        <stop offset="100%" class="stop-color-2"></stop>
+                                                                    </linearGradient>
+                                                                    <path class="circulo-color"
+                                                                        stroke="url(#pp-gradiente)"
+                                                                        stroke-dasharray="0,100"
+                                                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                    <text class="svgtexto-1">100</text>
+                                                                    <text class="svgtexto-2">min</text>
+                                                                    <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                    <text class="svgtexto-4">0</text>
+                                                                </svg>
+                                                            </div>
+                                                            <p class="card-text"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                            <div class="tab-pane bolsas" id="subtab-ldi-bolsas" role="tabpanel" aria-labelledby="subtab-ldi-bolsas-tab">
+                                                <div class="bolsas-contenedor">
+                                                    <div class="titulo-compuesto rojo-1 s-titulo">bolsas <span>adicionales</span></div>
+                                                    <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                                        <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                            Bolsa Adicional LDI 20 Minutos: <span>$ 19.990</span>
+                                                        </div>
+                                                        <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                                    </div>
+                                                    <div class="card-deck">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1">Minutos </div>
+                                                                <div class="grafico-consumo">
+                                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                                    title="">
+                                                                        <path class="circulo-fondo"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                            x2="1" y2="0">
+                                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                                        </linearGradient>
+                                                                        <path class="circulo-color"
+                                                                            stroke="url(#pp-gradiente)"
+                                                                            stroke-dasharray="0,100"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <text class="svgtexto-1">20</text>
+                                                                        <text class="svgtexto-2">Min</text>
+                                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                        <text class="svgtexto-4">5</text>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                                </div>
+                                                <div class="bolsas-contenedor">
+                                                    <div class="titulo-compuesto rojo-1 s-titulo">bolsas <span>adicionales</span></div>
+                                                    <!-- <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                            Bolsa Adicional LDI 60 Minutos: <span>$ 29.990</span>
+                                                        </div>
+                                                        <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                                    </div> -->
+                                                    <div class="card-deck">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1"
+                                                                    style="width: 140px;">Bolsa Adicional LDI 60 Minutos
+                                                                </div>
+                                                                <div class="grafico-consumo">
+                                                                    <svg viewBox="0 0 36 36" class="svg-circular"
+                                                                        data-toggle="tooltip" title="">
+                                                                        <path class="circulo-fondo"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                            x2="1" y2="0">
+                                                                            <stop offset="0%" class="stop-color-1">
+                                                                            </stop>
+                                                                            <stop offset="100%" class="stop-color-2">
+                                                                            </stop>
+                                                                        </linearGradient>
+                                                                        <path class="circulo-color"
+                                                                            stroke="url(#pp-gradiente)"
+                                                                            stroke-dasharray="0,100"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <text class="svgtexto-1">60</text>
+                                                                        <text class="svgtexto-2">Min</text>
+                                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                        <text class="svgtexto-4">60</text>
+                                                                    </svg>
+                                                                </div>
+                                                                <p class="card-text"><span>Vigencia de 30
+                                                                        d&iacute;as</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1"
+                                                                    style="width: 140px;">Bolsa Adicional LDI 60 Minutos
+                                                                </div>
+                                                                <div class="grafico-consumo">
+                                                                    <svg viewBox="0 0 36 36" class="svg-circular"
+                                                                        data-toggle="tooltip" title="">
+                                                                        <path class="circulo-fondo"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                            x2="1" y2="0">
+                                                                            <stop offset="0%" class="stop-color-1">
+                                                                            </stop>
+                                                                            <stop offset="100%" class="stop-color-2">
+                                                                            </stop>
+                                                                        </linearGradient>
+                                                                        <path class="circulo-color"
+                                                                            stroke="url(#pp-gradiente)"
+                                                                            stroke-dasharray="0,100"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <text class="svgtexto-1">60</text>
+                                                                        <text class="svgtexto-2">Min</text>
+                                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                        <text class="svgtexto-4">0</text>
+                                                                    </svg>
+                                                                </div>
+                                                                <p class="card-text"><span>Vigencia de 30
+                                                                        d&iacute;as</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="card-title titulo-light azul-1"
+                                                                    style="width: 140px;">Bolsa Adicional LDI 60 Minutos
+                                                                </div>
+                                                                <div class="grafico-consumo">
+                                                                    <svg viewBox="0 0 36 36" class="svg-circular"
+                                                                        data-toggle="tooltip" title="">
+                                                                        <path class="circulo-fondo"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <linearGradient id="pp-gradiente" x1="0" y1="1"
+                                                                            x2="1" y2="0">
+                                                                            <stop offset="0%" class="stop-color-1">
+                                                                            </stop>
+                                                                            <stop offset="100%" class="stop-color-2">
+                                                                            </stop>
+                                                                        </linearGradient>
+                                                                        <path class="circulo-color"
+                                                                            stroke="url(#pp-gradiente)"
+                                                                            stroke-dasharray="0,100"
+                                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                                        <text class="svgtexto-1">60</text>
+                                                                        <text class="svgtexto-2">Min</text>
+                                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                                        <text class="svgtexto-4">30</text>
+                                                                    </svg>
+                                                                </div>
+                                                                <p class="card-text"><span>Vigencia de 30
+                                                                        d&iacute;as</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="subtab-ldi-granel" role="tabpanel"
+                                                aria-labelledby="subtab-ldi-granel-tab">
+                                                <div class="titulo-semibold rojo-1 s-titulo">consumo y/o servicios adicionales de telefon&iacute;a</div>
+                                                <div class="card-deck">
+                                                    <div class="card granel">
+                                                        <div class="card-body">
+                                                            <div class="card-title titulo-light azul-1">Minutos</div>
+                                                            <div class="grafico-consumo">
+                                                                <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                                <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                                    <div class="titulo-light gris-1 ig-unidad">min</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="nav-act" role="tabpanel" aria-labelledby="nav-act-tab">
+                                    <div class="card-deck">
+                                        <div data-servicio="ROAMING" class="card roaming-ldi act-des desactivado">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1"></div>
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-logo-roaming.png" alt="Roamming">
+                                                    <div>
+                                                        <div class="titulo-bold rojo-1 t-roaming">Roaming</div>
+                                                        <div class="d-flex mt-1">
+                                                            <a class="btn-estado hover-circular" href="#"><span></span></a>
+                                                            <div class="estado"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="titulo-compuesto rojo-1 estado-solicitud">solicitud <span>en curso</span></div>
+                                                <p class="card-text titulo-compuesto estado-info">INFO</p>
+                                            </div>
+                                        </div>
+                                        <div data-servicio="LDI" class="card roaming-ldi act-des desactivado">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1"></div>
+                                                <div class="grafico-consumo">
+                                                    <img class="i-ldi" src="sv2/imgs/home/is-logo-ldi.png" alt="LDI">
+                                                    <div>
+                                                        <div class="titulo-bold rojo-1 t-ldi">Larga Distancia Internacional
+                                                        </div>
+                                                        <div class="d-flex mt-1">
+                                                            <a class="btn-estado hover-circular" href="#"><span></span></a>
+                                                            <div class="estado"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="titulo-compuesto rojo-1 estado-solicitud">solicitud <span>en curso</span></div>
+                                                <p class="card-text titulo-compuesto estado-info">INFO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN CONSUMO -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- INICIO: AGENDA HORA -->
+                    <div class="htmlHora home-agenda col-12 col-lg-6"></div>
+                    <!-- FIN: AGENDA HORA -->
+                    <!-- INICIO: BOLETA -->
+                    <div class="htmlBoleta home-boleta col-12 col-lg-6"></div>
+                    <!-- FIN: BOLETA -->
+                </div>
+                <!-- INICIO CONTRATAR -->
+                <div class="htmlContratar home-contratar postpago row"></div>
+                <!-- FIN CONTRATAR -->
+                <!-- INICIO AYUDA -->
+                <div class="htmlAyuda componente-ayuda row"></div>
+                <!-- FIN AYUDA -->
+            </div>
+            <div id="productoCuentaExactaSubview">
+                <div class="row">
+                    <div class="home-equipo cuenta-exacta col-12 col-md-5 col-lg-3">
+                        <!-- INICIO EQUIPO -->
+                        <div class="titulo-semibold rojo-1 t-equipo">Equipo</div>
+                        <div id="nombre-equipo" class="titulo-semibold azul-1 n-equipo">Propio</div>
+                        <img id="foto-equipo" class="imagen-equipo" src="sv2/imgs/home/telefono.png" alt="equipo">
+                        <a class="boton-redondeado hover-circular bg-azul-1" href="#!">bloquear equipo</a>
+                        <div class="titulo-semibold rojo-1 t-plan">Plan</div>
+                        <div id="nombre-plan" class="titulo-regular azul-1 n-plan">plan s cuenta exacta</div>
+                        <a href="javascript:void(0);" class="link azul-1 mb-2">SMS Premium &gt;</a>
+                        <table class="tabla-detalles">
+                            <tbody>
+                                <tr class="encabezado">
+                                    <td colspan="3">detalles plan</td>
+                                </tr>
+                                <tr>
+                                    <td>Minutos</td>
+                                    <td>: </td>
+                                    <td>Libres</td>
+                                </tr>
+                                <tr>
+                                    <td>Navegaci&oacute;n</td>
+                                    <td>:</td>
+                                    <td class="du">2147483648</td>
+                                </tr>
+                                <tr>
+                                    <td>SMS</td>
+                                    <td>:</td>
+                                    <td>500 sms.</td>
+                                </tr>
+                                <tr>
+                                    <td>Redes Sociales</td>
+                                    <td>:</td>
+                                    <td>Libres</td>
+                                </tr>
+                                <tr class="encabezado">
+                                    <td>cargo fijo</td>
+                                    <td>:</td>
+                                    <td id="cargo-fijo" class="monto">$ 00.000</td>
+                                </tr>
+                                <tr class="encabezado">
+                                    <td>saldos</td>
+                                    <td>:</td>
+                                    <td id="cargo-fijo" class="monto">$ 00.000</td>
+                                </tr>
+                                <tr class="encabezado">
+                                    <td>bonificaciones</td>
+                                    <td>:</td>
+                                    <td id="cargo-fijo" class="monto">$ 00.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">CAMBIAR PLAN</a>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">CAMBIAR EQUIPO</a>
+                        <!-- FIN EQUIPO -->
+                    </div>
+                    <div class="home-consumo cuenta-exacta col-12 col-md-7 col-lg-9">
+                        <!-- INICIO CONSUMO -->
+                        <div class="titulo-semibold rojo-1">Servicios</div>
+                        <div class="s-contenedor">
+                            <nav class="pestannas">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-ce-plan-tab" data-toggle="tab" href="#nav-ce-plan" role="tab" aria-controls="nav-ce-plan"
+                                        aria-selected="true">Plan</a>
+                                    <a class="nav-item nav-link" id="nav-ce-bolsas-tab" data-toggle="tab"
+                                        href="#nav-ce-bolsas" role="tab" aria-controls="nav-ce-bolsas"
+                                        aria-selected="false">Bolsas &oacute; Paquetes</a>
+                                    <a class="nav-item nav-link" id="nav-ce-granel-tab" data-toggle="tab"
+                                        href="#nav-ce-granel" role="tab" aria-controls="nav-ce-granel"
+                                        aria-selected="false">Servicios Adicionales</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane show active" id="nav-ce-plan" role="tabpanel" aria-labelledby="nav-ce-plan-tab">
+                                    <div class="card-deck">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Minutos</div>
+                                                <div class="grafico-consumo">
+                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                        title="">
+                                                        <path class="circulo-fondo"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <linearGradient id="pce-min-gradiente" x1="0" y1="1" x2="1"
+                                                            y2="0">
+                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                        </linearGradient>
+                                                        <path class="circulo-color" stroke="url(#pce-min-gradiente)"
+                                                            stroke-dasharray="0,100"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <text class="svgtexto-1">100</text>
+                                                        <text class="svgtexto-2">min</text>
+                                                        <text class="svgtexto-3">has CONSUMIDO</text>
+                                                        <text class="svgtexto-4">30</text>
+                                                    </svg>
+                                                    <div class="libres-min">
+                                                        <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicio
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card calcular-bytes">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Datos de Navegaci&oacute;n
+                                                </div>
+                                                <div class="grafico-consumo">
+                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                        title="">
+                                                        <path class="circulo-fondo"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <linearGradient id="pce-nav-gradiente" x1="0" y1="1" x2="1"
+                                                            y2="0">
+                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                        </linearGradient>
+                                                        <path class="circulo-color" stroke="url(#pce-nav-gradiente)"
+                                                            stroke-dasharray="0,100"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <text class="svgtexto-1">70</text>
+                                                        <text class="svgtexto-2">GB</text>
+                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                        <text class="svgtexto-4">30</text>
+                                                    </svg>
+                                                    <div class="libres-nav">
+                                                        <img src="sv2/imgs/home/is-gb.png" alt="GB">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicios
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">SMS</div>
+                                                <div class="grafico-consumo">
+                                                    <svg viewBox="0 0 36 36" class="svg-circular" data-toggle="tooltip"
+                                                        title="">
+                                                        <path class="circulo-fondo"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <linearGradient id="pce-sms-gradiente" x1="0" y1="1" x2="1"
+                                                            y2="0">
+                                                            <stop offset="0%" class="stop-color-1"></stop>
+                                                            <stop offset="100%" class="stop-color-2"></stop>
+                                                        </linearGradient>
+                                                        <path class="circulo-color" stroke="url(#pce-sms-gradiente)"
+                                                            stroke-dasharray="0,100"
+                                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                        <text class="svgtexto-1">500</text>
+                                                        <text class="svgtexto-2">SMS</text>
+                                                        <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                        <text class="svgtexto-4">2</text>
+                                                    </svg>
+                                                    <div class="libres-sms">
+                                                        <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicios
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card libres">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">redes sociales</div>
+                                                <div class="grafico-consumo">
+                                                    <div class="libres-rs">
+                                                        <img src="sv2/imgs/home/is-rs.png" alt="RS">
+                                                        <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                    </div>
+                                                </div>
+                                                <p class="card-text">
+                                                    Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                    <br>
+                                                    para renovar tus servicios
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                </div>
+                                <div class="tab-pane bolsas" id="nav-ce-bolsas" role="tabpanel" aria-labelledby="nav-ce-bolsas-tab">
+                                    <div class="bolsas-contenedor">
+                                        <div class="titulo-compuesto rojo-1 s-titulo">Paquetes <span>activos</span>
+                                        </div>
+                                        <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                            <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                Paquete $ 9.990 <span>Producto Recurrente</span>
+                                            </div>
+                                            <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                        </div>
+                                        <a class="boton-redondeado hover-circular bg-azul-1 mt-1" href="#!">cancelar recurrencia</a>
+                                        <div class="card-deck">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Minutos</div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="pce-min-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#pce-min-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">100</text>
+                                                            <text class="svgtexto-2">min</text>
+                                                            <text class="svgtexto-3">has CONSUMIDO</text>
+                                                            <text class="svgtexto-4">30</text>
+                                                        </svg>
+                                                        <div class="libres-min">
+                                                            <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicio
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card calcular-bytes">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Datos de
+                                                        Navegaci&oacute;n
+                                                    </div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="pce-nav-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#pce-nav-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">70</text>
+                                                            <text class="svgtexto-2">GB</text>
+                                                            <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                            <text class="svgtexto-4">30</text>
+                                                        </svg>
+                                                        <div class="libres-nav">
+                                                            <img src="sv2/imgs/home/is-gb.png" alt="GB">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card libres">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">redes sociales</div>
+                                                    <div class="grafico-consumo">
+                                                        <div class="libres-rs">
+                                                            <img src="sv2/imgs/home/is-rs.png" alt="RS">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                    </div>
+                                    <div class="bolsas-contenedor">
+                                        <div class="titulo-compuesto rojo-1 s-titulo">Paquetes <span>activos</span>
+                                        </div>
+                                        <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                            <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                Paquete $ 5.990 <span>Producto Recurrente</span>
+                                            </div>
+                                            <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                        </div>
+                                        <a class="boton-redondeado hover-circular bg-azul-1 mt-1" href="#!">cancelar recurrencia</a>
+                                        <div class="card-deck">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Minutos</div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="ppre-min-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#ppre-min-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">10</text>
+                                                            <text class="svgtexto-2">min</text>
+                                                            <text class="svgtexto-3">has CONSUMIDO</text>
+                                                            <text class="svgtexto-4">10</text>
+                                                        </svg>
+                                                        <div class="libres-min">
+                                                            <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicio
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card calcular-bytes">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Datos de
+                                                        Navegaci&oacute;n
+                                                    </div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="ppre-nav-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#ppre-nav-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">20</text>
+                                                            <text class="svgtexto-2">GB</text>
+                                                            <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                            <text class="svgtexto-4">10</text>
+                                                        </svg>
+                                                        <div class="libres-nav">
+                                                            <img src="sv2/imgs/home/is-gb.png" alt="GB">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card libres">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">redes sociales</div>
+                                                    <div class="grafico-consumo">
+                                                        <div class="libres-rs">
+                                                            <img src="sv2/imgs/home/is-rs.png" alt="RS">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="nav-ce-granel" role="tabpanel" aria-labelledby="nav-ce-granel-tab">
+                                    <div class="titulo-semibold rojo-1 s-titulo">consumo y/o servicios adicionales de telefon&iacute;a</div>
+                                    <div class="card-deck">
+                                        <div class="card granel">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Minutos</div>
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-voz.png" alt="Voz">
+                                                    <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                        <div class="titulo-light gris-1 ig-unidad">MIN</div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="card granel">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">SMS</div>
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                    <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                        <div class="titulo-light gris-1 ig-unidad">SMS</div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="card granel">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Datos de Navegaci&oacute;n
+                                                </div>
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-datos.png" alt="Navegacion">
+                                                    <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                        <div class="titulo-light gris-1 ig-unidad">GB</div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN CONSUMO -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- INICIO: AGENDA HORA -->
+                    <div class="htmlHora home-agenda col-12 col-lg-6"></div>
+                    <!-- FIN: AGENDA HORA -->
+                    <!-- INICIO: BOLETA -->
+                    <div class="htmlBoleta home-boleta col-12 col-lg-6"></div>
+                    <!-- FIN: BOLETA -->
+                </div>
+                <!-- INICIO CONTRATAR -->
+                <div class="htmlContratar home-contratar cuenta-exacta row"></div>
+                <!-- FIN CONTRATAR -->
+                <!-- INICIO AYUDA -->
+                <div class="htmlAyuda componente-ayuda row"></div>
+                <!-- FIN AYUDA -->
+            </div>
+            <div id="productoPrepagoSubview">
+                <div class="row">
+                    <div class="home-equipo prepago col-12 col-md-5 col-lg-3">
+                        <!-- INICIO EQUIPO -->
+                        <div class="titulo-semibold rojo-1">Prepago</div>
+                        <div id="nombre-plan" class="titulo-regular gris-1 n-plan">prepago tarifa multimedia 119 +</div>
+                        <a href="javascript:void(0);" class="link azul-1 mb-2">SMS Premium &gt;</a>
+                        <a class="boton-redondeado hover-circular bg-azul-1 b-bloquear mt-2" href="#!">bloquear equipo</a>
+                        <table class="tabla-detalles">
+                            <tbody>
+                                <tr class="encabezado">
+                                    <td>saldos</td>
+                                    <td>:</td>
+                                    <td id="saldos" class="monto">$ 00.000</td>
+                                </tr>
+                                <tr class="encabezado">
+                                    <td>bonificaciones</td>
+                                    <td>:</td>
+                                    <td id="boni" class="monto">$ 00.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">cambiar tarifa</a>
+                        <a class="boton-redondeado hover-circular bg-rojo-1" href="#!">recarga aqu&iacute;</a>
+                        <!-- FIN EQUIPO -->
+                    </div>
+                    <div class="home-consumo prepago col-12 col-md-7 col-lg-9">
+                        <!-- INICIO CONSUMO -->
+                        <div class="titulo-semibold rojo-1">Servicios</div>
+                        <div class="s-contenedor">
+                            <nav class="pestannas">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-pre-bolsas-tab" data-toggle="tab" href="#nav-pre-bolsas" role="tab" aria-controls="nav-pre-bolsas"
+                                        aria-selected="true">Bolsas &oacute; Paquetes</a>
+                                    <a class="nav-item nav-link" id="nav-pre-granel-tab" data-toggle="tab"
+                                        href="#nav-pre-granel" role="tab" aria-controls="nav-pre-granel"
+                                        aria-selected="false">Servicios Adicionales</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane show active bolsas" id="nav-pre-bolsas" role="tabpanel" aria-labelledby="nav-pre-bolsas-tab">
+                                    <div class="bolsas-contenedor">
+                                        <div class="titulo-compuesto rojo-1 s-titulo">Paquetes <span>activos</span>
+                                        </div>
+                                        <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                            <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                Paquete $ 9.990 <span>Producto Recurrente</span>
+                                            </div>
+                                            <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                        </div>
+                                        <a class="boton-redondeado hover-circular bg-azul-1 mt-1" href="#!">cancelar recurrencia</a>
+                                        <div class="card-deck">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Minutos</div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="ppre-b-min-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#ppre-b-min-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">100</text>
+                                                            <text class="svgtexto-2">min</text>
+                                                            <text class="svgtexto-3">has CONSUMIDO</text>
+                                                            <text class="svgtexto-4">30</text>
+                                                        </svg>
+                                                        <div class="libres-min">
+                                                            <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicio
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card calcular-bytes">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Datos de
+                                                        Navegaci&oacute;n
+                                                    </div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="ppre-b-nav-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#ppre-b-nav-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">70</text>
+                                                            <text class="svgtexto-2">GB</text>
+                                                            <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                            <text class="svgtexto-4">30</text>
+                                                        </svg>
+                                                        <div class="libres-nav">
+                                                            <img src="sv2/imgs/home/is-gb.png" alt="GB">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card libres">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">redes sociales</div>
+                                                    <div class="grafico-consumo">
+                                                        <div class="libres-rs">
+                                                            <img src="sv2/imgs/home/is-rs.png" alt="RS">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                    </div>
+                                    <div class="bolsas-contenedor">
+                                        <div class="titulo-compuesto rojo-1 s-titulo">Paquetes <span>activos</span>
+                                        </div>
+                                        <div class="d-flex text-left flex-column flex-lg-row align-items-lg-end justify-content-lg-between">
+                                            <div class="titulo-compuesto gris-1 nombre-bolsa">
+                                                Paquete $ 15.990 <span>Producto Recurrente</span>
+                                            </div>
+                                            <div class="titulo-bold rojo-1 vigencia">Vigencia de 30 d&iacute;as</div>
+                                        </div>
+                                        <a class="boton-redondeado hover-circular bg-azul-1 mt-1" href="#!">cancelar recurrencia</a>
+                                        <div class="card-deck">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Minutos</div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="ppre-b2-min-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#ppre-b2-min-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">60</text>
+                                                            <text class="svgtexto-2">min</text>
+                                                            <text class="svgtexto-3">has CONSUMIDO</text>
+                                                            <text class="svgtexto-4">30</text>
+                                                        </svg>
+                                                        <div class="libres-min">
+                                                            <img src="sv2/imgs/home/is-voz.png" alt="Minutos">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicio
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card calcular-bytes">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">Datos de
+                                                        Navegaci&oacute;n
+                                                    </div>
+                                                    <div class="grafico-consumo">
+                                                        <svg viewBox="0 0 36 36" class="svg-circular"
+                                                            data-toggle="tooltip" title="">
+                                                            <path class="circulo-fondo"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <linearGradient id="ppre-b2-nav-gradiente" x1="0" y1="1" x2="1"
+                                                                y2="0">
+                                                                <stop offset="0%" class="stop-color-1"></stop>
+                                                                <stop offset="100%" class="stop-color-2"></stop>
+                                                            </linearGradient>
+                                                            <path class="circulo-color" stroke="url(#ppre-b2-nav-gradiente)"
+                                                                stroke-dasharray="0,100"
+                                                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                                            <text class="svgtexto-1">50</text>
+                                                            <text class="svgtexto-2">GB</text>
+                                                            <text class="svgtexto-3">HAS CONSUMIDO</text>
+                                                            <text class="svgtexto-4">10</text>
+                                                        </svg>
+                                                        <div class="libres-nav">
+                                                            <img src="sv2/imgs/home/is-gb.png" alt="GB">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="card libres">
+                                                <div class="card-body">
+                                                    <div class="card-title titulo-light azul-1">redes sociales</div>
+                                                    <div class="grafico-consumo">
+                                                        <div class="libres-rs">
+                                                            <img src="sv2/imgs/home/is-rs.png" alt="RS">
+                                                            <div class="titulo-light gris-1 ltexto-1">Libres</div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-text">
+                                                        Te quedan <span class="dias-renovacion">24 d&iacute;as</span>
+                                                        <br>
+                                                        para renovar tus servicios
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="nav-pre-granel" role="tabpanel" aria-labelledby="nav-pre-granel-tab">
+                                    <div class="titulo-semibold rojo-1 s-titulo">consumo y/o servicios adicionales de telefon&iacute;a</div>
+                                    <div class="card-deck">
+                                        <div class="card granel">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Minutos</div>
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-voz.png" alt="Voz">
+                                                    <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                        <div class="titulo-light gris-1 ig-unidad">MIN</div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="card granel">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">SMS</div>
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-sms.png" alt="SMS">
+                                                    <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                        <div class="titulo-light gris-1 ig-unidad">SMS</div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                        <div class="card granel">
+                                            <div class="card-body">
+                                                <div class="card-title titulo-light azul-1">Datos de Navegaci&oacute;n
+                                                </div>
+                                                <div class="grafico-consumo">
+                                                    <img src="sv2/imgs/home/is-datos.png" alt="Navegacion">
+                                                    <div class="titulo-light gris-1 ig-titulo">Has Consumido</div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="titulo-light gris-1 ig-cantidad">0</div>
+                                                        <div class="titulo-light gris-1 ig-unidad">GB</div>
+                                                    </div>
+                                                </div>
+                                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN CONSUMO -->
+                    </div>
+                </div>
+                <!-- INICIO CONTRATAR -->
+                <div class="htmlContratar home-contratar prepago row"></div>
+                <!-- FIN CONTRATAR -->
+                <div class="row">
+                    <!-- INICIO: AGENDA HORA -->
+                    <div class="htmlHora home-agenda prepago col-12 col-md-6"></div>
+                    <!-- FIN: AGENDA HORA -->
+                    <!-- INICIO AYUDA -->
+                    <div class="htmlAyuda componente-ayuda prepago col-12 col-md-6"></div>
+                    <!-- FIN AYUDA -->
+                </div>
+            </div>
+            <div id="productoHogarBAFISubview">
+                <div class="row">
+                    <div class="home-equipo hogar-bafi col-12 col-md-6">
+                        <!-- INICIO EQUIPO -->
+                        <div class="d-flex">
+                            <img class="ico-hogar" src="sv2/imgs/home/icono-hogar.png" alt="Hogar">
+                            <div class="mt-auto">
+                                <div class="titulo-semibold rojo-1">Plan</div>
+                                <div id="nombre-plan" class="titulo-regular azul-1 n-plan">Bafi 50 Gb 02 2019</div>
+                                <div class="titulo-light gris-1 nro">N&uacute;mero: +56 2 26026353</div>
+                            </div>
+                        </div>
+                        <table class="tabla-detalles">
+                            <tbody>
+                                <tr class="encabezado">
+                                    <td colspan="3">detalles plan</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Equipo ROUTER LTE TDD HUAWEI B612</td>
+                                </tr>
+                                <tr class="mt">
+                                    <td>IMEI</td>
+                                    <td>:</td>
+                                    <td>864596034623340</td>
+                                </tr>
+                                <tr class="mt">
+                                    <td>N&deg; SIM CARD</td>
+                                    <td>:</td>
+                                    <td>73000900626048</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">cambiar plan</a>
+                        <!-- FIN EQUIPO -->
+                    </div>
+                    <div class="home-consumo hogar-bafi col-12 col-md-6">
+                        <!-- INICIO CONSUMO -->
+                        <div class="titulo-semibold rojo-1 t-titulo">Servicios</div>
+                        <div id="h-sc-internet" class="card">
+                            <div class="card-body">
+                                <div class="card-title titulo-light azul-1">Internet wifi</div>
+                                <div class="grafico-consumo">
+                                    <svg viewBox="0 0 36 36" class="svg-circular">
+                                        <path class="circulo-fondo"
+                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <linearGradient id="h-gradiente" x1="0" y1="1" x2="1" y2="0">
+                                            <stop offset="0%" class="stop-color-1"></stop>
+                                            <stop offset="100%" class="stop-color-2"></stop>
+                                        </linearGradient>
+                                        <path class="circulo-color" stroke="url(#h-gradiente)" stroke-dasharray="90,100"
+                                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        <text class="svgtexto-1">49.92</text>
+                                        <text class="svgtexto-2">tienes</text>
+                                        <text class="svgtexto-3">gb DISPONIBLES</text>
+                                        <text class="svgtexto-4">EN TU PLAN</text>
+                                    </svg>
+                                </div>
+                                <a class="link azul-1" href="consumo.html">M&aacute;s detalles &gt;</a>
+                            </div>
+                        </div>
+                        <!-- FIN CONSUMO -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- INICIO: AGENDA HORA -->
+                    <div class="htmlHora home-agenda col-12 col-lg-6"></div>
+                    <!-- FIN: AGENDA HORA -->
+                    <div class="home-boleta col-12 col-lg-6">
+                        <!-- INICIO BOLETA -->
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <img src="sv2/imgs/home/icono-boleta.png" alt="boleta">
+                                    <div class="titulo-semibold rojo-1 t-boleta">Boletas (msj con error)</div>
+                                </div>
+                                <div class="g-error">
+                                    <img class src="sv2/imgs/home/icono-error.png" alt="error">
+                                    <div class="titulo-regular gris-1">
+                                        Si tienes contratados servicios con Plan (M&oacute;vil u Hogar) actualmente no posees
+                                        boletas emitidas o
+                                        presentamos un inconveniente para acceder a esta informaci&oacute;n. Por favor, intenta
+                                        m&aacute;s tarde.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN BOLETA -->
+                    </div>
+                </div>
+                <!-- INICIO CONTRATAR -->
+                <div class="htmlContratar home-contratar hogar row"></div>
+                <!-- FIN CONTRATAR -->
+                <!-- INICIO AYUDA -->
+                <div class="htmlAyuda componente-ayuda row"></div>
+                <!-- FIN AYUDA -->
+            </div>
+            <div id="productoHogarHFCSubview">
+                <div class="row">
+                    <div class="home-equipo hogar-hfc col-12 col-md-6">
+                        <!-- INICIO EQUIPO -->
+                        <div class="d-flex">
+                            <img class="ico-hogar" src="sv2/imgs/home/icono-hogar.png" alt="Hogar">
+                            <div class="mt-auto">
+                                <div class="titulo-semibold rojo-1">Plan</div>
+                                <div id="nombre-plan" class="titulo-regular azul-1 n-plan">Pro HD Mas 01 - 2019</div>
+                            </div>
+                        </div>
+                        <table class="tabla-detalles">
+                            <tbody>
+                                <tr class="encabezado">
+                                    <td colspan="3">detalles plan</td>
+                                </tr>
+                                <tr class="mt">
+                                    <td>Televisi&oacute;n</td>
+                                    <td>:</td>
+                                    <td>
+                                        <div><span>$ 00.000</span> Deco HD Adicional</div>
+                                        <div><span>$ 00.000</span> Claro Sport</div>
+                                        <div><span>$ 00.000</span> Deco STD Adicional</div>
+                                    </td>
+                                </tr>
+                                <tr class="mt">
+                                    <td>Internet</td>
+                                    <td>:</td>
+                                    <td>
+                                        <div><span>$ 00.000</span> Lorem ipsum dolor</div>
+                                    </td>
+                                </tr>
+                                <tr class="mt">
+                                    <td>Telefon&iacute;a</td>
+                                    <td>:</td>
+                                    <td>
+                                        <div><span>$ 00.000</span> Lorem ipsum dolor</div>
+                                        <div><span>$ 00.000</span> Lorem ipsum dolor</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">cambiar plan</a>
+                        <!-- FIN EQUIPO -->
+                    </div>
+                    <div class="home-consumo hogar-hfc col-12 col-md-6">
+                        <!-- INICIO CONSUMO -->
+                        <div class="titulo-compuesto rojo-1 t-titulo">servicios <span>habilitados</span></div>
+                        <div class="contenedor-lista icono">
+                            <ul class="lista-simple">
+                                <li>
+                                    <img src="sv2/imgs/home/icono-hogar-tv.png" alt="TV">TV Avanzado
+                                </li>
+                                <li>
+                                    <img src="sv2/imgs/home/icono-hogar-tv.png" alt="TV">TV Pro HD Fútbol 12 2017
+                                </li>
+                                <li>
+                                    <img src="sv2/imgs/home/icono-hogar-wifi.png" alt="Wifi">Internet 100 Mbps NO MTA WiFi 12
+                                    2017
+                                </li>
+                                <li>
+                                    <img src="sv2/imgs/home/icono-hogar-wifi.png" alt="Wifi">Internet 15 Mbps WiFi
+                                </li>
+                                <li>
+                                    <img src="sv2/imgs/home/icono-hogar-tlf.png" alt="Tlf">Tel&eacute;fono
+                                </li>
+                                <!--
+                                        <li>
+                                            <img src="sv2/imgs/home/icono-hogar-tv.png" alt="TV">TV Avanzado
+                                        </li>
+                                        <li>
+                                            <img src="sv2/imgs/home/icono-hogar-tv.png" alt="TV">TV Pro HD Fútbol 12 2017
+                                        </li>
+                                        <li>
+                                            <img src="sv2/imgs/home/icono-hogar-wifi.png" alt="TV">Internet 100 Mbps NO MTA WiFi 12 2017
+                                        </li>
+                                        <li>
+                                            <img src="sv2/imgs/home/icono-hogar-wifi.png" alt="TV">Internet 15 Mbps WiFi
+                                        </li>
+                                        <li>
+                                            <img src="sv2/imgs/home/icono-hogar-wifi.png" alt="TV">Internet 15 Mbps WiFi NO MTA 08 2017
+                                        </li>
+                                        -->
+                            </ul>
+                        </div>
+                        <!-- FIN CONSUMO -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- INICIO: AGENDA HORA -->
+                    <div class="htmlHora home-agenda col-12 col-lg-6"></div>
+                    <!-- FIN: AGENDA HORA -->
+                    <!-- INICIO: BOLETA -->
+                    <div class="htmlBoleta home-boleta col-12 col-lg-6"></div>
+                    <!-- FIN: BOLETA -->
+                </div>
+                <!-- INICIO CONTRATAR -->
+                <div class="htmlContratar home-contratar hogar row"></div>
+                <!-- FIN CONTRATAR -->
+                <!-- INICIO AYUDA -->
+                <div class="htmlAyuda componente-ayuda row"></div>
+                <!-- FIN AYUDA -->
+            </div>
+            <div id="productoHogarDTHSubview">
+                <div class="row">
+                    <div class="home-equipo hogar-dth col-12 col-md-6">
+                        <!-- INICIO EQUIPO -->
+                        <div class="d-flex">
+                            <img class="ico-hogar" src="sv2/imgs/home/icono-hogar.png" alt="Hogar">
+                            <div class="mt-auto">
+                                <div class="titulo-semibold rojo-1">Plan</div>
+                                <div id="nombre-plan" class="titulo-regular azul-1 n-plan">Pro HD Mas 01 - 2019</div>
+                            </div>
+                        </div>
+                        <table class="tabla-detalles">
+                            <tbody>
+                                <tr class="encabezado">
+                                    <td colspan="3">detalles plan</td>
+                                </tr>
+                                <tr class="mt">
+                                    <td>Televisi&oacute;n</td>
+                                    <td>:</td>
+                                    <td>
+                                        <div><span>$ 00.000</span> Deco HD Adicional</div>
+                                        <div><span>$ 00.000</span> Claro Sport</div>
+                                        <div><span>$ 00.000</span> Deco STD Adicional</div>
+                                    </td>
+                                </tr>
+                                <tr class="mt">
+                                    <td>Informaci&oacute;n</td>
+                                    <td>:</td>
+                                    <td>El decodificador incluido en el Plan no es considerado adicional</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="boton-redondeado hover-circular bg-rojo-1 b-cambiar" href="#!">cambiar plan</a>
+                        <!-- FIN EQUIPO -->
+                    </div>
+                    <div class="home-consumo hogar-dth col-12 col-md-6">
+                        <!-- INICIO CONSUMO -->
+                        <div class="titulo-compuesto rojo-1 t-titulo">servicios <span>habilitados</span></div>
+                        <div class="contenedor-lista punto">
+                            <ul class="lista-simple">
+                                <li>CDF HD</li>
+                                <li>tELEFON&iacute;A CONTROL 150</li>
+                                <li>TELEFON&iacute;A CONTROL 300 07 - 2017</li>
+                                <li>TELEFON&iacute;A CONTROL 150 07 - 2018</li>
+                                <li>TELEFON&iacute;A CONTROL 500 10 - 2018</li>
+                                <li>TELEFON&iacute;A CONTROL 500 10 - 2018</li>
+                            </ul>
+                        </div>
+                        <!-- FIN CONSUMO -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- INICIO: AGENDA HORA -->
+                    <div class="htmlHora home-agenda col-12 col-lg-6"></div>
+                    <!-- FIN: AGENDA HORA -->
+                    <!-- INICIO: BOLETA -->
+                    <div class="htmlBoleta home-boleta col-12 col-lg-6"></div>
+                    <!-- FIN: BOLETA -->
+                </div>
+                <!-- INICIO CONTRATAR -->
+                <div class="htmlContratar home-contratar hogar row"></div>
+                <!-- FIN CONTRATAR -->
+                <!-- INICIO AYUDA -->
+                <div class="htmlAyuda componente-ayuda row"></div>
+                <!-- FIN AYUDA -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIN CONTENEDOR PRINCIPAL -->
+
+<!-- INICIO FOOTER -->
+    <div id="htmlFooter"></div>
+<!-- FIN FOOTER -->
+
+</body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#htmlHeader').load('header.html');
+            // $('#htmlHome').load('home.html');
+            $('.htmlHora').load('home/agendarHora.html');
+            $('.htmlBoleta').load('home/boleta.html');
+            $('.htmlContratar').load('home/contratar.html');
+            $('.htmlAyuda').load('centroAyuda.html');
+            $('#htmlFooter').load('footer.html');
+        });
+    </script>
+    <script type="text/javascript" src="sv2/js/general.js"></script>
+</html>

@@ -1,0 +1,93 @@
+<nav class="header">
+    <div class="arriba">
+        <div class="container">
+            <section>
+                <span class="bienvenido">Bienvenido/a</span>
+                <span class="bienvenido">Jesús Acevedo</span>
+                <div class="dropdown show usuario">
+                    <a class="dropdown-toggle boton" href="#" role="button" id="menuUsuario" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="sv2/imgs/header/icono-usuario.png" alt="Usuario">
+                    </a>
+                    <div class="dropdown-menu opciones" aria-labelledby="menuUsuario">
+                        <a class="dropdown-item"
+                            onclick="ga('send', 'event','Nav Men�','Clic','Home: Mis datos');" 
+                            href="<c:url value='/mis-datos' />">Mis Datos</a>
+                        <a class="dropdown-item" 
+                            onclick="ga('send', 'event','Nav Men�','Clic','Home: Notificaciones');" 
+                            href="<c:url value='/notificaciones' />">Notificaciones</a>
+                        <a class="dropdown-item" 
+                            onclick="ga('send', 'event','Nav Men�','Clic','Home: Accesos a MI CLARO');" 
+                            href="<c:url value='/accesos-a-miclaro' />">Acceso a MI CLARO</a>
+                    </div>
+                </div>
+                <a class="cerrar-sesion" href="#!">
+                    Cerrar Sesi&oacute;n
+                    <span>
+                        <img src="sv2/imgs/header/icono-cerrar-sesion.png" alt="x">
+                    </span>
+                </a>
+            </section>
+        </div>
+    </div>
+    <div class="abajo">
+        <div class="container">
+            <a href="#!">
+                <img class="logo" src="sv2/imgs/header/header-logo.png" alt="Mi Claro">
+            </a>
+            <section>
+                <a id="menu-mobile" onclick="clickMenu()">
+                    <img src="sv2/imgs/header/menu-mobile.png" alt="Menu">
+                </a>
+                <ul id="header-menu" class="h-menu">
+                    <li class="activa">
+                        <a class="hover-circular" href="index.html">Inicio</a>
+                    </li>
+                    <!-- <li>
+                        <a class="hover-circular" href="#!">M&oacute;vil</a>
+                    </li>
+                    <li>
+                        <a class="hover-circular" href="#!">Hogar</a>
+                    </li> -->
+                    <li>
+                        <a class="hover-circular" href="consumo.html">Consumos</a>
+                    </li>
+                    <li>
+                        <a class="hover-circular" href="#!">Boletas</a>
+                    </li>
+                    <li>
+                        <a class="hover-circular" href="contratar-servicios.html">Contratar servicios</a>
+                    </li>
+                    <li>
+                        <a class="hover-circular" href="#!">Consultas y solicitudes</a>
+                    </li>
+                    <!-- <li>
+                        <a class="hover-circular" href="#!">BENEFICIOS</a>
+                    </li> -->
+                    <li>
+                        <a class="cerrar-sesion" href="#!">Cerrar Sesi&oacute;n</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</nav>
+<!--
+*===============================================
+*---------- SOLO PARA PRUEBAS LOCALES ----------
+*===============================================
+-->
+<script type="text/javascript">
+    var pathname = window.location.pathname; // Returns path only (/path/example.html)
+    var url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
+    var origin   = window.location.origin;   // Returns base URL (https://example.com)
+    pathname = pathname.replace('/public/','');
+    function menuSeleccionado(ubicacion) {
+        var li = $('#header-menu li');
+        li.removeClass('activa');
+        var a = li.find('a[href="'+ubicacion+'"]');
+        a.closest(li).addClass('activa');
+    }
+    $(document).ready(function() {
+        menuSeleccionado(pathname);
+    });
+</script>
